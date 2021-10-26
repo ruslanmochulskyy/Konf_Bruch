@@ -23,17 +23,15 @@ public class Bruch {
         return String.format("\"%d / %d\"", numerator, denominator);
     }
 
+    private static Bruch multiplyFractures(Bruch b1, Bruch b2) {
+        int multipliedNumerator = b1.numerator * b2.numerator;
+        int multipliedDenominator = b1.denominator * b2.denominator;
+
+        return new Bruch(multipliedNumerator, multipliedDenominator);
+    }
+
     public Bruch multiplicate(Bruch b2) {
-        /* TODO:
-        *  Erstellen Sie für das Ergebnis eine neue Bruch-Variable
-        *   => Übergeben Sie im Konstruktur für numerator den
-        *       eigenen numerator multipliziert mit b2.getNumerator()
-        *   => Selbige auch für denominator
-        *  Retournieren Sie ihre neue Bruch-Variable
-        * */
-
-
-        return null;
+        return multiplyFractures(this, b2);
     }
 
     public Bruch multiplicate(Bruch b2,  Bruch b3) {
