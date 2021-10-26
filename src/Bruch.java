@@ -1,9 +1,10 @@
 public class Bruch {
-    private int numerator; // Zähler
-    private int denominator; // Nenner
+    private final int numerator; // Zähler
+    private final int denominator; // Nenner
 
     public Bruch(int numerator, int denominator) {
-        // TODO: Setzen Sie die Attribute entsprechend
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
     public int getNumerator() {
