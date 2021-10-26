@@ -35,8 +35,6 @@ public class Bruch {
     }
 
     public Bruch multiplicate(Bruch b2,  Bruch b3) {
-        // TODO: Multiplizieren Sie den eigenen Bruch mit b2 und b3
-
-        return null;
+        return multiplyFractures(this ,multiplyFractures(b2, b3));
     }
 }
